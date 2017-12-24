@@ -3,63 +3,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/tabs"
+    <cn.edu.cwnu.zhangls.dropdownmenu.DropDownMenu
+        android:id="@+id/menu"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="@color/white"
-        android:gravity="center"
-        android:layout_gravity="center">
-
-        <cn.edu.cwnu.zhangls.dropdownmenu.DropdownButton
-            android:id="@+id/dropdown_btn"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/btn_unselected"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Unselected"/>
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="@color/divide" />
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <android.support.v4.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/large_text"/>
-        </android.support.v4.widget.NestedScrollView>
-
-        <View
-            android:id="@+id/mask"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#80000000" />
-
-        <ListView
-            android:id="@+id/list_view"
-            android:background="@color/white"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingStart="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingEnd="@dimen/activity_horizontal_margin"
-            android:dividerHeight="1dp"
-            android:divider="@color/divide"
-            android:scrollbars="none"
-            android:visibility="visible"
-            android:listSelector="@android:color/transparent"/>
-    </FrameLayout>
+        android:layout_height="50dp"
+        android:background="@color/colorAccent" />
 
 </LinearLayout>
